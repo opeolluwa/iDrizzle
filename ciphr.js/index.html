@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>HTML</title>
+ <!-- HTML -->
+ <!-- Custom Styles -->
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <h1>ceasar <img src="cxx.png"> cipher</h1>
+ <div class="container">
+  <div role="form">
+   <!--words to cipher-->
+   <textarea name="encrypt" id="feedOne" rows="10" cols="25" placeholder="cipher words" onclick="input = document.getElementById('feedOne'); output = document.getElementById('feedTwo');" oninput= "encodeRot13()"></textarea>
+   <!--words to decipher-->
+   <textarea name="decrypt" id="feedTwo" rows="10" cols="25" placeholder="decipher words"
+   
+   placeholder="cipher words" onclick="input = document.getElementById('feedTwo'); output = document.getElementById('feedOne');" oninput="encodeRot13()"
+   ondblclick="output.value =''; "
+   
+   ></textarea>
+  </div>
+ </div>
+ </div>
+ <!-- Project -->
+ <script src="decrypt2.js"></script>
+</body>
+
+</html>
+<!--
+
+
+<!--onclick="input = document.getElementById('feedOne'); output = document.getElementById('feedTwo')"-->

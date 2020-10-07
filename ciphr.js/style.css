@@ -1,0 +1,133 @@
+* {
+ box-sizing: border-box;
+ padding: .12rem;
+ margin: 0;
+}
+
+@keyframes scale {
+ 0% {
+  padding-top: 180%;
+  opacity: 0;
+ }
+
+ 100% {
+  padding-top: 0%;
+  opacity: 1;
+ }
+}
+
+@keyframes fade {
+ 0% {
+  border: .7px solid rgba(144, 192, 40, .3);
+
+ }
+
+ 100% {
+  border: none;
+ }
+}
+
+@keyframes spin {
+ 0% {
+  transform: rotateY(0deg);
+ }
+
+ 100% {
+  transform: rotateY(360deg);
+ }
+}
+
+body {
+ font-size: 16px;
+ font-family: monospace;
+ font-weight: lighter;
+ letter-spacing: .1px;
+ background: rgba(0, 0, 0, .99);
+ color: #f9f9f9;
+}
+
+h1:first-letter {
+ font-family: cursive;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+h1 {
+ color: #C02058;
+ font-weight: 100;
+ font-size: 1.8rem;
+ text-align: center;
+}
+
+.container {
+ text-align: center;
+ font-size: 1.4rem;
+ font-weight: 200;
+ width: auto;
+ height: 700px;
+ background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(hero.png) no-repeat;
+ margin-top: 5%;
+}
+
+
+.container p {
+ text-align: center;
+ color: #e0d080;
+ font-weight: lighter;
+ font-size: .9rem;
+ letter-spacing: 1px;
+}
+
+.container .hex {
+ padding: .25rem;
+  animation: fade 10s linear;
+}
+
+.container div[role="form"] {
+ display: flex;
+ position: relative;
+ top: 1%;
+ border: .7px solid rgba(144, 192, 40, .3);
+ height: 60%;
+ background: rgba(153, 153, 153, .1);
+ border-radius: .4rem;
+}
+
+.container textarea {
+ margin: 1.2rem;
+ box-sizing: border-box;
+ color: #f5f5f5;
+ width: inherit;
+ height: 60;
+ border: none;
+ background: transparent;
+ outline: none;
+}
+
+.container textarea:first-child {
+ margin-right: 1px;
+ color: #e0d080;
+  padding-right: 1px;
+ text-align: right;
+
+}
+
+.container textarea:last-child {
+ margin-left: 0;
+  color: #98d028;
+  padding-left: 1px;
+ text-align: right;
+
+}
+.container small{
+ font-size: .8rem;
+ color: rgba(255, 255, 255, .3);
+  text-align: left;
+
+}
+img[src="cxx.png"] {
+ margin: -4%;
+ width: 12%;
+ animation: spin 3s ease-in-out infinite;
+ animation-direction: alternate;
+}
