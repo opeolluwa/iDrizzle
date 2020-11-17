@@ -1,0 +1,59 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+div[name='calculator'] {
+ display: flex;
+ flex-direction: column;
+ background: #f2f2f2;
+}
+
+div[name='calculator'] .display {
+ width: 30%;
+ display: flex;
+ border: 1px solid red;
+}
+
+div[name='calculator'] .display .input {
+ font-size: 20px;
+}
+
+div[name='calculator'] .display .output {
+ font-size: 15px;
+}
+
+div[name='calculator'] .body {
+ border: 1px solid green;
+ justify-content: space-between;
+ align-items: flex-start;
+ width: 80%;
+ display: flex;
+ flex-direction: column;
+ padding: .45rem;
+ border-top-right-radius: 5%;
+ border-top-left-radius: 5%;
+ border-top: 1.2px solid #fdca00;
+}
+
+div[name='calculator'] .body button {
+ padding: .45rem;
+ margin: .2rem;
+ font-size: 19px;
+ border-radius: 5%;
+ box-shadow: 0 3px .5px #1a1a1a;
+}
+
+/*main.container*/
+
+
+div[name='calculator'] .body .digit div {
+ margin-top: 1rem;
+ display: flex;
+}
+
+div[name='calculator'] .body .controls {
+ display: flex;
+ flex-direction: column;
+}
